@@ -203,6 +203,7 @@ body {
     width: 264px;
     flex-direction: column;
     gap: 8px;
+    align-items: start;
 }
 
 .header-three {
@@ -211,7 +212,7 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
+    text-align: left;
     margin-bottom: 8px;
 }
 .paragraph {
@@ -219,8 +220,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: left;
+}
+.team-member-item .h-team,
+.team-member-item .p-team {
     text-align: center;
 }
+
 .what-are-we-doing {
     padding-bottom: 120px;
 }
