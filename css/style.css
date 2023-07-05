@@ -30,10 +30,9 @@ img {
 }
 .container {
     max-width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .visually-hidden {
     position: absolute;
@@ -46,6 +45,7 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    margin-bottom: 8px;
 }
 
 body {
@@ -74,10 +74,11 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    padding: 24px 76px 24px 0px;
+    padding: 24px 0px 24px 0px;
     align-items: center;
     flex-shrink: 0;
     display: inline-flex;
+    margin-right: 76px;
 }
 
 .logo-footer {
@@ -90,7 +91,8 @@ body {
     text-transform: uppercase;
     align-items: center;
     flex-shrink: 0;
-    display: inline-flex;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-footer .studio {
@@ -106,6 +108,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 .menu:hover {
     color: var(--ocean);
@@ -141,7 +144,7 @@ body {
 }
 .page-nav-list,
 .address-nav-list {
-    display: inline-flex;
+    display: flex;
     gap: 40px;
     padding: 24px 0;
 }
@@ -151,7 +154,7 @@ body {
 }
 
 .service .container {
-    padding: 188px 472px;
+    padding: 188px 0px;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -163,7 +166,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     text-align: center;
     flex-shrink: 0;
 }
@@ -177,11 +180,12 @@ body {
     letter-spacing: 0.64px;
     color: var(--white);
     cursor: pointer;
-    display: inline-flex;
+    display: block;
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
     border: 0px;
+    min-width: 169px;
 }
 
 .order-service-button:hover,
@@ -192,8 +196,8 @@ body {
     display: flex;
     gap: 24px;
 }
-.feature .container {
-    padding-top: 120px;
+.feature {
+    padding: 120px 0;
 }
 .feature-item {
     display: flex;
@@ -208,12 +212,15 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .paragraph {
     color: var(--slate);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 .what-are-we-doing {
     padding-bottom: 120px;
@@ -228,8 +235,7 @@ body {
 }
 
 .header-two {
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     color: var(--navyblue);
     font-size: 36px;
     line-height: 1.11;
@@ -239,7 +245,7 @@ body {
 }
 .section-team {
     background-color: var(--cloud);
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 .section-team .team-member-list {
     display: flex;
@@ -248,19 +254,14 @@ body {
 .team-member-item {
     background-color: var(--white);
     display: inline-flex;
-    padding-bottom: 0px;
     flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
+    justify-content: center;
 }
 .info-about-team {
     display: flex;
-    width: 232px;
     flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    padding: 32px 16px;
 }
 .header-bottom {
     border-bottom: 1px solid var(--cornflower, #e7e9fc);
@@ -270,11 +271,12 @@ body {
     padding-top: 96px;
     padding-bottom: 120px;
 }
+
 .container .category-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .button-category {
@@ -297,44 +299,35 @@ body {
     color: var(--white);
     padding: 12px 24px;
     border-radius: 4px;
+    border: 1px solid transparent;
 }
 .container .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .portfolio-item {
-    border: 1px solid var(--cornflower);
     width: 360px;
     display: flex;
-    padding-bottom: 32px;
     flex-direction: column;
-    gap: 32px;
     flex-shrink: 0;
 }
 .portfolio-info {
     display: flex;
-    padding: 0px 16px;
+    padding: 32px 16px;
     flex-direction: column;
-    gap: 8px;
+    border: 1px solid var(--cornflower);
 }
 .footer {
     background-color: var(--navyblue);
+    padding: 100px 0;
 }
-.footer .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.footer-info {
-    width: 264px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    flex-shrink: 0;
-}
+
 .conclusion {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--cloud);
+    max-width: 264px;
 }
