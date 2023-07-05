@@ -135,14 +135,13 @@ body {
     display: flex;
     gap: 332px;
 }
-.navigation {
+.page-nav {
     display: flex;
     align-items: center;
 }
-.page-nav,
-.address-nav {
+.page-nav-list,
+.address-nav-list {
     display: inline-flex;
-    align-items: flex-start;
     gap: 40px;
     padding: 24px 0;
 }
@@ -180,7 +179,6 @@ body {
     cursor: pointer;
     display: inline-flex;
     padding: 16px 32px;
-    align-items: flex-start;
     gap: 10px;
     border-radius: 4px;
     border: 0px;
@@ -190,18 +188,17 @@ body {
 .order-service-button:focus {
     background-color: var(--ocean);
 }
-.feature .container .capability {
+.feature .container .feature-list {
     display: flex;
     gap: 24px;
 }
 .feature .container {
     padding-top: 120px;
 }
-.feature-list {
+.feature-item {
     display: flex;
     width: 264px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
 }
 
@@ -221,14 +218,13 @@ body {
 .what-are-we-doing {
     padding-bottom: 120px;
 }
-.what-are-we-doing .what-are-we-doing-list {
+.what-are-we-doing-list {
     display: flex;
     gap: 24px;
 }
-.what-are-we-doing-link {
+.what-are-we-doing-item {
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .header-two {
@@ -249,12 +245,11 @@ body {
     display: flex;
     gap: 24px;
 }
-.team-member {
+.team-member-item {
     background-color: var(--white);
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 32px;
     padding-bottom: 32px;
@@ -264,7 +259,6 @@ body {
     display: flex;
     width: 232px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 8px;
 }
@@ -295,7 +289,6 @@ body {
     border-radius: 4px;
     border: 1px solid var(--cornflower);
     padding: 12px 24px;
-    justify-content: center;
     align-items: center;
 }
 .button-category:hover,
@@ -310,12 +303,18 @@ body {
     flex-wrap: wrap;
     gap: 24px;
 }
-.portfolio-items {
+.portfolio-item {
     border: 1px solid var(--cornflower);
     width: 360px;
     display: flex;
-    padding-bottom: 0;
+    padding-bottom: 32px;
+    flex-direction: column;
+    gap: 32px;
+    flex-shrink: 0;
+}
+.portfolio-info {
     display: flex;
+    padding: 0px 16px;
     flex-direction: column;
     gap: 8px;
 }
