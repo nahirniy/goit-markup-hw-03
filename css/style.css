@@ -7,6 +7,47 @@
     --cloud: #f4f4fd;
     --ocean: #404bbf;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+.container {
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 body {
     font-family: Roboto, sans-serif;
     background-color: #ffffff;
@@ -33,6 +74,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    padding: 24px 76px 24px 0px;
 }
 
 .studio-header {
@@ -160,4 +202,18 @@ body {
 .button-category:focus {
     background-color: var(--ocean);
     color: var(--white);
+}
+
+.page-header .container {
+    display: flex;
+    gap: 332px;
+}
+.navigation {
+    display: flex;
+}
+.page-nav,
+.address-nav {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
 }
