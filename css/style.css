@@ -45,7 +45,6 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-    margin-bottom: 8px;
 }
 
 body {
@@ -151,10 +150,10 @@ body {
 
 .service {
     background-color: var(--navyblue);
+    padding: 188px 0px;
 }
 
 .service .container {
-    padding: 188px 0px;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -300,6 +299,7 @@ body {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid transparent;
+    border-top: none;
 }
 .container .portfolio-list {
     display: flex;
